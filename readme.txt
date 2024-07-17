@@ -1,7 +1,7 @@
 === Crypto Price Table ===
 Contributors: dhiabm1998
 Donate link: https://icogems.com
-Tags: crypto, cryptocurrency, ticker, coinmarketcap, coingecko, price, table
+Tags: crypto, cryptocurrency, ticker, coinmarketcap, bitcoin, btc, ethereum
 Requires at least: 4.0
 Tested up to: 6.5
 Stable tag: 1.0.0
@@ -9,18 +9,14 @@ Requires PHP: 5.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Free Customizable Cryptocurrency Price Table with real-time price update, marketcap and flexible settings. 
+Customizable Cryptocurrency Price Table with real-time price update, marketcap and flexible settings. 
 
 == Description ==
 
 **Crypto Price Table** :
-Elevate your website with the Crypto Price Table, a robust plugin offering a seamless crypto real time price & marketcap for 2000 popular coins. 
-<br>
-
-[http://example.com/images/screenshot.png  Description for the first screenshot]
-
-<br>
-Experience real-time cryptocurrency price updates with highly customizable settings. Transform your site with an elegant and efficient solution for displaying live crypto prices.
+A robust Customizable cryptocurrency live price plugin offering a seamless crypto price & marketcap for 2000 popular coins. 
+<br><br>
+Experience real-time cryptocurrency price updates with highly customizable settings. Transform your site with an elegant and efficient live crypto prices.
 <br><br>
 Built with pure JavaScript & websocket, this widget ensures seamless performance while offloading data processing to a secure third-party server. 
 
@@ -34,18 +30,17 @@ Built with pure JavaScript & websocket, this widget ensures seamless performance
 
 = Features =
 1. No Cryptojacking!
-2. 2000 cryptocurrencies and 162 fiat currencies;
-3. Real-time streaming price update;
+2. Support 2000 popular cryptocurrencies;
+3. Real-time streaming price update with websocket;
 4. Flexible settings and customizable design;
 5. Processed on a 3rd-party server;
 7. SSL support;
 8. IE9+ support;
 9. SEO-friendly.
+10. Support & updates from [icogems](https://icogems.com)
 
 
 This plugin is powred by one of the most powerful ICO & Crypto listing platforms: [ICOGEMS – Ico calendar & crypto listing website](https://icogems.com)
-
-Supported by: [ICOGEMS](https://icogems.com)
 
 == Installation ==
 
