@@ -45,7 +45,7 @@ This plugin is powred by one of the most powerful ICO & Crypto listing platforms
 == Installation ==
 
 = Video =
-[youtube https://www.youtube.com/watch?v=D7thN9c8PxM]
+[youtube https://www.youtube.com/watch?v=j0QNw4hz_TE]
 
 = From your WordPress dashboard =
 1. Visit "Plugins > Add New"
