@@ -1,9 +1,9 @@
 === Crypto Price Table ===
 Contributors: dhiabm1998
 Donate link: https://icogems.com
-Tags: crypto, cryptocurrency, ticker, coinmarketcap, bitcoin, btc, ethereum
+Tags: crypto, cryptocurrency, ticker, coinmarketcap, bitcoin
 Requires at least: 4.0
-Tested up to: 6.5
+Tested up to: 6.6
 Stable tag: 1.0.0
 Requires PHP: 5.3
 License: GPLv2 or later
