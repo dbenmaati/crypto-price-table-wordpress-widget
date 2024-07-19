@@ -48,7 +48,8 @@ Built with pure JavaScript & websocket, this widget ensures seamless performance
 
 **Installation**
 1 - Download the latest stable plugin zip file from this direct link:
-2 - extract the zip inside your wordpress plugins folder (root/wp-content/plugins/)
+2 - extract the zip inside your wordpress plugins folder 
+(root/wp-content/plugins/)
 3 - In your wordpress admin page activate the plugin
 4 - All Done Enjoy!
 
@@ -61,7 +62,7 @@ Built with pure JavaScript & websocket, this widget ensures seamless performance
 You can post the shortcode anywhere in your wordpress website
 3 - All Done!
 
-**[Video Tutorial]([readme.com](https://www.youtube.com/watch?v=j0QNw4hz_TE))**
+[Video Tutorial]([readme.com](https://www.youtube.com/watch?v=j0QNw4hz_TE))
 
 
 ---
