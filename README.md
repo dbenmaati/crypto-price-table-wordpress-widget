@@ -51,9 +51,12 @@ Built with pure JavaScript & websocket, this widget ensures seamless performance
 
 **Installation**
 1 - Download the latest stable plugin zip file from this direct link: [Download Link](https://github.com/dbenmaati/crypto-price-table-wordpress-widget/releases/tag/Stable)
+
 2 - extract the zip inside your wordpress plugins folder 
 (root/wp-content/plugins/)
+
 3 - In your wordpress admin page activate the plugin
+
 4 - All Done Enjoy!
 
 **Usage**
@@ -61,8 +64,10 @@ Built with pure JavaScript & websocket, this widget ensures seamless performance
 ![Table Preview 2](https://icogems.com/img/wp-data/sc5-settings.jpg)
 
 1 - After customizing the table view and colors click on <Generate & Copy Shortcode>
+
 2 - Copy the generated shortcode and paster it inside any page, post, widget section. 
 You can post the shortcode anywhere in your wordpress website
+
 3 - All Done!
 
 [Video Tutorial]([https://github.com/dbenmaati](https://www.youtube.com/watch?v=j0QNw4hz_TE))
