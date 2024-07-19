@@ -2,7 +2,7 @@
 
 ##### A Customizable Cryptocurrency Price Table with real-time price update, marketcap and flexible settings. 
 
-![alt text](https://icogems.com/img/wp-data/cpt-wp-banner.jpg)
+<img src="https://icogems.com/img/wp-data/cpt-wp-banner.jpg" width="720" >
 
 ----
 
@@ -62,7 +62,7 @@ Built with pure JavaScript & websocket, this widget ensures seamless performance
 You can post the shortcode anywhere in your wordpress website
 3 - All Done!
 
-[Video Tutorial]([readme.com](https://www.youtube.com/watch?v=j0QNw4hz_TE))
+**[Video Tutorial]([https://github.com/dbenmaati](https://www.youtube.com/watch?v=j0QNw4hz_TE))**
 
 
 ---
