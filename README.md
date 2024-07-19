@@ -71,7 +71,7 @@ You can post the shortcode anywhere in your wordpress website
 
 3 - All Done!
 
-[Video Tutorial]([https://github.com/dbenmaati](https://www.youtube.com/watch?v=j0QNw4hz_TE))
+[Video Tutorial](https://github.com/dbenmaati](https://www.youtube.com/watch?v=j0QNw4hz_TE)
 
 
 ---
