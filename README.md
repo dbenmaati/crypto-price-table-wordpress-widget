@@ -1,8 +1,17 @@
-# Wordpress Crypto Price Table
+<h1 align="center">Wordpress Crypto Price Table</h1>
 
-##### A Customizable Cryptocurrency Price Table with real-time price update, marketcap and flexible settings. 
+<p align="center">
+##### A Customizable Cryptocurrency Price Table with real-time price update, marketcap and flexible settings.
+</p>
 
-<img src="https://icogems.com/img/wp-data/cpt-wp-banner.jpg" width="720" >
+<p align="center">
+    <img src="https://icogems.com/img/wp-data/cpt-wp-banner.jpg" alt="alt text">
+</p>
+
+<p align="center">
+    <img src="https://icogems.com/img/wp-data/cpt-wp-banner.jpg" width="720">
+</p>
+
 
 ----
 
