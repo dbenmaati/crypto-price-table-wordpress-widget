@@ -50,6 +50,7 @@ Built with pure JavaScript & websocket, this widget ensures seamless performance
 ## How To install & use the plugin
 
 **Installation**
+
 1 - Download the latest stable plugin zip file from this direct link: [Download Link](https://github.com/dbenmaati/crypto-price-table-wordpress-widget/releases/tag/Stable)
 
 2 - extract the zip inside your wordpress plugins folder 
