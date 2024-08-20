@@ -18,46 +18,24 @@ function enqueue_crypto_price_table_styles($hook) {
 function crypto_price_table_settings_page() {
     ?>
     <div class="wrap">
-        <h1><?php esc_html_e('Crypto Price Table Settings', 'text-domain'); ?></h1>
-        <div class="crypto-settings-container">
-            <div class="crypto-settings-box">
+        <h1><?php esc_html_e('Crypto Price Table Settings', 'crypto-price-table'); ?></h1>
+        <div class="cpt-crypto-settings-container">
+            <div class="cpt-crypto-settings-box">
                 <form method="post" action="options.php">
                     <?php
                     settings_fields('crypto_price_table_settings_group');
                     do_settings_sections('crypto_price_table');
-                    submit_button(__('Generate & Copy Shortcode', 'text-domain'));
+                    submit_button(__('Generate & Copy Shortcode', 'crypto-price-table'));
                     ?>
                 </form>
                 <?php wp_editor(generate_shortcode_preview(), 'editor1', ['wpautop' => 1, 'media_buttons' => 0, 'textarea_name' => '', 'textarea_rows' => 6, 'tabindex' => null, 'teeny' => 0, 'dfw' => 0, 'tinymce' => 0, 'quicktags' => 0, 'drag_drop_upload' => false]); ?>
             </div>
-            <div class="crypto-preview-box">
-                <h2><?php esc_html_e('Preview', 'text-domain'); ?></h2>
+            <div class="cpt-crypto-preview-box">
+                <h2><?php esc_html_e('Preview', 'crypto-price-table'); ?></h2>
                 <?php echo do_shortcode(generate_shortcode_preview()); ?>
             </div>
         </div>
     </div>
-
-    <style>
-        .crypto-settings-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        .crypto-settings-box, .crypto-preview-box {
-            width: 48%;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .crypto-preview-box {
-            background-color: #fff;
-        }
-        .crypto-settings-box form {
-            margin-bottom: 0;
-        }
-    </style>
 
     <?php
 }
@@ -85,14 +63,14 @@ function crypto_price_table_register_settings() {
 
     add_settings_section(
         'crypto_price_table_main_section',
-        __('Main Settings', 'text-domain'),
+        __('Main Settings', 'crypto-price-table'),
         'crypto_price_table_main_section_cb',
         'crypto_price_table'
     );
 
     add_settings_field(
         'crypto_price_table_coins',
-        __('Select Cryptocurrencies', 'text-domain'),
+        __('Select Cryptocurrencies', 'crypto-price-table'),
         'crypto_price_table_coins_field_cb',
         'crypto_price_table',
         'crypto_price_table_main_section'
@@ -100,7 +78,7 @@ function crypto_price_table_register_settings() {
 
     add_settings_field(
         'crypto_price_table_text_color',
-        __('Text Color', 'text-domain'),
+        __('Text Color', 'crypto-price-table'),
         'crypto_price_table_text_color_field_cb',
         'crypto_price_table',
         'crypto_price_table_main_section'
@@ -108,7 +86,7 @@ function crypto_price_table_register_settings() {
 
     add_settings_field(
         'crypto_price_table_table_head_color',
-        __('Table Head Color', 'text-domain'),
+        __('Table Head Color', 'crypto-price-table'),
         'crypto_price_table_table_head_color_field_cb',
         'crypto_price_table',
         'crypto_price_table_main_section'
@@ -116,7 +94,7 @@ function crypto_price_table_register_settings() {
 
     add_settings_field(
         'crypto_price_table_table_body_color',
-        __('Table Body Color', 'text-domain'),
+        __('Table Body Color', 'crypto-price-table'),
         'crypto_price_table_table_body_color_field_cb',
         'crypto_price_table',
         'crypto_price_table_main_section'
@@ -124,7 +102,7 @@ function crypto_price_table_register_settings() {
 
     add_settings_field(
         'crypto_price_table_marketcap',
-        __('Show Marketcap', 'text-domain'),
+        __('Show Marketcap', 'crypto-price-table'),
         'crypto_price_table_marketcap_cb',
         'crypto_price_table',
         'crypto_price_table_main_section'
@@ -132,7 +110,7 @@ function crypto_price_table_register_settings() {
 
     add_settings_field(
         'crypto_price_table_credits',
-        __('Show Credits', 'text-domain'),
+        __('Show Credits', 'crypto-price-table'),
         'crypto_price_table_credits_cb',
         'crypto_price_table',
         'crypto_price_table_main_section'
@@ -141,7 +119,7 @@ function crypto_price_table_register_settings() {
 
 // Callback function for the main section
 function crypto_price_table_main_section_cb() {
-    echo '<p>' . esc_html__('Select the cryptocurrencies you want to display.', 'text-domain') . '</p>';
+    echo '<p>' . esc_html__('Select the cryptocurrencies you want to display.', 'crypto-price-table') . '</p>';
 }
 
 // Callback function for the coins field
@@ -224,8 +202,8 @@ function crypto_price_table_enqueue_scripts() {
     wp_enqueue_script('crypto-price-table-color-picker', plugins_url('includes/js/crypto-price-table-color-picker.js', __FILE__), array('wp-color-picker'), '1.0.0', true);
 
     // Enqueue Select2
-    wp_enqueue_style('select2', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css', array(), '1.0.0');
-    wp_enqueue_script('select2', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_style('select2', plugin_dir_url(__FILE__) . 'includes/css/select2.css', array(), '1.0.0');
+    wp_enqueue_script('select2', plugins_url('includes/js/select2.js', __FILE__), array('jquery'), '1.0.0', true);
 
     // Initialize Select2 and Color Picker
     wp_add_inline_script('select2', 'jQuery(document).ready(function($) { $("#crypto_price_table_coins").select2(); $(".color-field").wpColorPicker(); });');

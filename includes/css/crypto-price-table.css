@@ -41,3 +41,24 @@
     margin-left: 50px; 
     display: inline-block; 
 }
+
+
+.cpt-crypto-settings-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cpt-crypto-settings-box, .cpt-crypto-preview-box {
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cpt-crypto-preview-box {
+    background-color: #fff;
+}
+.cpt-crypto-settings-box form {
+    margin-bottom: 0;
+}

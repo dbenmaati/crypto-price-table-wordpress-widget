@@ -39,7 +39,12 @@ Built with pure JavaScript & websocket, this widget ensures seamless performance
 9. SEO-friendly.
 10. Support & updates from [icogems](https://icogems.com)
 
+<br><br>
 
+Our plugin leverages third-party WebSocket and REST APIs to deliver real-time cryptocurrency data, significantly reducing the load on your server. 
+We source this data from the reliable [Coincap API](https://coincap.io). For more information about the API and its Terms of Service, you can visit [coincap api documentation](https://docs.coincap.io/).
+
+<br><br>
 This plugin is powred by one of the most powerful ICO & Crypto listing platforms: [ICOGEMS – Ico calendar & crypto listing website](https://icogems.com)
 
 == Installation ==

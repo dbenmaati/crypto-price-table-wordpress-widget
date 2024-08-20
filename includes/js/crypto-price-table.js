@@ -7,28 +7,46 @@ jQuery(document).ready(function($) {
             dataType: 'json',
             success: function(response) {
                 // Update table with new data
+                var cnt = 0;
                 response.data.forEach(function(coin) {
                     var price = coin.priceUsd ? '$' + parseFloat(coin.priceUsd).toFixed(2) : 'N/A';
                     var change = coin.changePercent24Hr ? formatMarketCap(coin.changePercent24Hr) : 'N/A';
                     var marketCap = coin.marketCapUsd ? '$' + formatMarketCap(coin.marketCapUsd).toLocaleString() : 'N/A';
-                    
+
                     // Find and update existing table rows
                     var $row = $('#crypto-price-table tbody tr[data-coin="' + coin.id + '"]');
                     if ($row.length > 0) {
                         $row.find('.price').text(price);
                         $row.find('.market-cap').text(marketCap);
                     } else {
-                        // Create new row if not found (optional)
-                        $('#crypto-price-table tbody').append(`
-                            <tr class="cpt-table-row" data-coin="${coin.id}">
-                                <td class="cpt-table-cell">
-                                    <img src="${cryptoPriceTable.logo_url}${coin.id}-logo.png" class="cpt-profile-image">
-                                    <a style="text-decoration: none; color: inherit;" href="https://icogems.com/cryptocurrency/${coin.id}"> <span class="cpt-name" style="font-weight: bold;">${coin.name}</span> </a>
-                                </td>
-                                <td class="cpt-table-cell"> <span class="price">${price}</span> ${checkChainge(change)} </td>
-                                ${cryptoPriceTable.show_marketcap == 'true' && `<td class="cpt-table-cell market-cap">${marketCap}</td>`}
-                            </tr>
-                        `);                        
+                        if (cnt == 0){
+                            // Create new row if not found
+                            $('#crypto-price-table tbody').append(`
+                                <tr style="background-color:${cryptoPriceTable.table_body_color}; color:${cryptoPriceTable.text_color} !important ; filter: brightness(100%);" data-coin="${coin.id}">
+                                    <td class="cpt-table-cell">
+                                        <img src="${cryptoPriceTable.logo_url}${coin.id}-logo.png" class="cpt-profile-image">
+                                        <a style="text-decoration: none; color: inherit;" href="https://icogems.com/cryptocurrency/${coin.id}"> <span class="cpt-name" style="font-weight: bold;">${coin.name}</span> </a>
+                                    </td>
+                                    <td class="cpt-table-cell"> <span class="price">${price}</span> ${checkChainge(change)} </td>
+                                    ${cryptoPriceTable.show_marketcap == 'true' && `<td class="cpt-table-cell market-cap">${marketCap}</td>`}
+                                </tr>
+                            `);
+                            cnt = 1;
+                        }
+                        else{
+                            // Create new row if not found
+                            $('#crypto-price-table tbody').append(`
+                                <tr style="background-color:${cryptoPriceTable.table_body_color}; color:${cryptoPriceTable.text_color} !important ; filter: brightness(90%);" data-coin="${coin.id}">
+                                    <td class="cpt-table-cell">
+                                        <img src="${cryptoPriceTable.logo_url}${coin.id}-logo.png" class="cpt-profile-image">
+                                        <a style="text-decoration: none; color: inherit;" href="https://icogems.com/cryptocurrency/${coin.id}"> <span class="cpt-name" style="font-weight: bold;">${coin.name}</span> </a>
+                                    </td>
+                                    <td class="cpt-table-cell"> <span class="price">${price}</span> ${checkChainge(change)} </td>
+                                    ${cryptoPriceTable.show_marketcap == 'true' && `<td class="cpt-table-cell market-cap">${marketCap}</td>`}
+                                </tr>
+                            `);
+                            cnt = 0;
+                        }                        
                     }
                 });
 

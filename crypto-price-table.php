@@ -49,6 +49,9 @@ function crypto_price_table_shortcode($attr) {
         'coins' => $attr['coins'],
         'show_marketcap' => $attr['show_marketcap'],
         'logo_url' => plugin_dir_url(__FILE__) . 'public/logos/',
+
+        'table_body_color' => $attr['table_body_color'],
+        'text_color' => $attr['text_color'],
     ));
 
     $text_color = esc_attr($attr['text_color']);
@@ -57,27 +60,10 @@ function crypto_price_table_shortcode($attr) {
     $show_marketcap = esc_attr($attr['show_marketcap']);
     $show_credits = esc_attr($attr['show_credits']);
 
-    $output = 
-        '<style>
-            .cpt-table-header {
-                background-color: ' . $table_head_color . ' !important;
-                color: ' . $text_color . ' !important;
-            }
-            .cpt-table-row:nth-child(even) {
-                background-color: ' . $table_body_color . ';
-                filter: brightness(100%);
-                color: ' . $text_color . ' !important;
-            }
-            .cpt-table-row:nth-child(odd) {
-                background-color: ' . $table_body_color . ';
-                filter: brightness(90%);
-                color: ' . $text_color . ' !important;
-            }
-        </style>';
 
-    $output .= '<div class="cpt-table-container" id="crypto-price-table-container">';
+    $output = '<div class="cpt-table-container" id="crypto-price-table-container">';
     $output .= '<table id="crypto-price-table" class="cpt-custom-table">';
-    $output .= '<thead><tr class="cpt-table-header"><th class="cpt-table-header-cell">Cryptocurrency</th><th class="cpt-table-header-cell">Price (USD)</th>';
+    $output .= '<thead><tr style="background-color: ' . $table_head_color . ' !important; color: ' . $text_color . ' !important;"><th class="cpt-table-header-cell">Cryptocurrency</th><th class="cpt-table-header-cell">Price (USD)</th>';
     if ($show_marketcap === 'true') {
         $output .= '<th class="cpt-table-header-cell">Market Cap</th>';
     }
