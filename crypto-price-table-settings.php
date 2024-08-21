@@ -49,7 +49,7 @@ function cptpref_generate_shortcode_preview() {
     $show_marketcap = get_option('crypto_price_table_marketcap', true); 
     $show_credits = get_option('crypto_price_table_credits', false); 
     $coins_str = implode(',', $selected_coins);
-    return '[crypto_price_table coins="' . esc_attr($coins_str) . '" text_color="' . esc_attr($text_color) . '" table_head_color="' . esc_attr($table_head_color) . '" table_body_color="' . esc_attr($table_body_color) . '" show_marketcap="' . ($show_marketcap ? 'true' : 'false') . '" show_credits="' . ($show_credits ? 'true' : 'false') . '"]';
+    return '[cptpref_crypto_price_table coins="' . esc_attr($coins_str) . '" text_color="' . esc_attr($text_color) . '" table_head_color="' . esc_attr($table_head_color) . '" table_body_color="' . esc_attr($table_body_color) . '" show_marketcap="' . ($show_marketcap ? 'true' : 'false') . '" show_credits="' . ($show_credits ? 'true' : 'false') . '"]';
 }
 
 // Function to register settings

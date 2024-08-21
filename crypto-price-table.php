@@ -40,7 +40,7 @@ function cptpref_crypto_price_table_shortcode($attr) {
         'table_body_color' => '#ffffff',
         'show_marketcap' => 'true',
         'show_credits' => 'false',
-    ), $attr, 'crypto_price_table');
+    ), $attr, 'cptpref_crypto_price_table');
     
     wp_enqueue_script('crypto-price-table-script', plugin_dir_url(__FILE__) . 'includes/js/crypto-price-table.js', array('jquery'), '1.0.0', true);
     wp_localize_script('crypto-price-table-script', 'cryptoPriceTable', array(
@@ -81,7 +81,7 @@ function cptpref_crypto_price_table_shortcode($attr) {
 
     return $output;
 }
-add_shortcode('crypto_price_table', 'cptpref_crypto_price_table_shortcode');
+add_shortcode('cptpref_crypto_price_table', 'cptpref_crypto_price_table_shortcode');
 
 // Function to register admin menu
 function cptpref_crypto_price_table_admin_menu() {
