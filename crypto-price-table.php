@@ -23,16 +23,16 @@ if (!defined('ABSPATH')) {
 require_once(plugin_dir_path(__FILE__) . 'crypto-price-table-settings.php');
 
 // Enqueue styles for the table
-function crypto_price_table_enqueue_styles() {
+function cptpref_crypto_price_table_enqueue_styles() {
     if (!is_singular()) {
         return;
     }
     wp_enqueue_style('crypto-price-table-style', plugin_dir_url(__FILE__) . 'includes/css/crypto-price-table.css', array(), '1.0.0');
 }
-add_action('wp_enqueue_scripts', 'crypto_price_table_enqueue_styles');
+add_action('wp_enqueue_scripts', 'cptpref_crypto_price_table_enqueue_styles');
 
 // Shortcode function to display the crypto price table
-function crypto_price_table_shortcode($attr) {
+function cptpref_crypto_price_table_shortcode($attr) {
     $attr = shortcode_atts(array(
         'coins' => 'bitcoin,ethereum,binance-coin',
         'text_color' => '#000000',
@@ -81,18 +81,18 @@ function crypto_price_table_shortcode($attr) {
 
     return $output;
 }
-add_shortcode('crypto_price_table', 'crypto_price_table_shortcode');
+add_shortcode('crypto_price_table', 'cptpref_crypto_price_table_shortcode');
 
 // Function to register admin menu
-function crypto_price_table_admin_menu() {
+function cptpref_crypto_price_table_admin_menu() {
     add_menu_page(
         'Crypto Price Table Settings',
         'Crypto Price Table',
         'manage_options',
         'crypto-price-table',
-        'crypto_price_table_settings_page',
+        'cptpref_crypto_price_table_settings_page',
         'dashicons-chart-line',
         100
     );
 }
-add_action('admin_menu', 'crypto_price_table_admin_menu');
+add_action('admin_menu', 'cptpref_crypto_price_table_admin_menu');
