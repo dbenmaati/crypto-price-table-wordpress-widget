@@ -106,11 +106,12 @@ Once the plugin is activated, you can start customizing your crypto price table 
 
 
 == Screenshots ==
-![screenshot1](https://icogems.com/img/wp-data/sc1.jpg)
-![screenshot2](https://icogems.com/img/wp-data/sc2.jpg)
-![screenshot3](https://icogems.com/img/wp-data/sc3.jpg)
-![screenshot4](https://icogems.com/img/wp-data/sc4.jpg)
-![screenshot5](https://icogems.com/img/wp-data/sc5-settings.jpg)
+1. screenshot-1.png - Widget preview 1
+2. screenshot-2.png - Settings page
+3. screenshot-3.png - Widget preview 2
+4. screenshot-4.png - Widget preview 3
+5. screenshot-5.png - Widget preview 4
+
 
 == Changelog ==
 = 1.0.0 =
