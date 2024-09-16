@@ -74,7 +74,7 @@ function cptpref_crypto_price_table_shortcode($attr) {
 
     $output .= '</tbody>';
     if ($show_credits === 'true') {
-        $output .= '<tfoot><tr><td colspan="3" style="text-align: right; font-size: 12px;">Powered By <a href="https://icogems.com" target="_blank" style="color: orange; text-decoration: none;">ICOGEMS</a></td></tr></tfoot>';
+        $output .= '<tfoot><tr><td colspan="3" style="text-align: right; font-size: 12px;">Powered By <a href="https://icogems.com" rel="nofollow" target="_blank" style="color: orange; text-decoration: none;">ICOGEMS</a></td></tr></tfoot>';
     }
     $output .= '</table>';
     $output .= '</div>';
