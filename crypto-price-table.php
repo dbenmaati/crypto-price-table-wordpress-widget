@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @version 1.0.0
+ * @version 1.0.2
  */
 
 /*
 Plugin Name: Crypto Price Table
 Description: Customizable Cryptocurrency Price Table with real-time price update, marketcap and flexible settings. 
-Version: 1.0.0
+Version: 1.0.2
 Author: icogems
 Author URI: https://icogems.com
 License: GPLv2 or later
