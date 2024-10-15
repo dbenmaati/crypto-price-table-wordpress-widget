@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
                                 <tr style="background-color:${cryptoPriceTable.table_body_color}; color:${cryptoPriceTable.text_color} !important ; filter: brightness(100%);" data-coin="${coin.id}">
                                     <td class="cpt-table-cell">
                                         <img src="${cryptoPriceTable.logo_url}${coin.id}-logo.png" class="cpt-profile-image">
-                                        <a style="text-decoration: none; color: inherit;" href="https://icogems.com/cryptocurrency/${coin.id}"> <span class="cpt-name" style="font-weight: bold;">${coin.name}</span> </a>
+                                        <a style="text-decoration: none; color: inherit;" href="https://icogems.com/cryptocurrency"> <span class="cpt-name" style="font-weight: bold;">${coin.name}</span> </a>
                                     </td>
                                     <td class="cpt-table-cell"> <span class="price">${price}</span> ${checkChainge(change)} </td>
                                     ${cryptoPriceTable.show_marketcap == 'true' && `<td class="cpt-table-cell market-cap">${marketCap}</td>`}
@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
                                 <tr style="background-color:${cryptoPriceTable.table_body_color}; color:${cryptoPriceTable.text_color} !important ; filter: brightness(90%);" data-coin="${coin.id}">
                                     <td class="cpt-table-cell">
                                         <img src="${cryptoPriceTable.logo_url}${coin.id}-logo.png" class="cpt-profile-image">
-                                        <a style="text-decoration: none; color: inherit;" href="https://icogems.com/cryptocurrency/${coin.id}"> <span class="cpt-name" style="font-weight: bold;">${coin.name}</span> </a>
+                                        <a style="text-decoration: none; color: inherit;" href="https://icogems.com/cryptocurrency"> <span class="cpt-name" style="font-weight: bold;">${coin.name}</span> </a>
                                     </td>
                                     <td class="cpt-table-cell"> <span class="price">${price}</span> ${checkChainge(change)} </td>
                                     ${cryptoPriceTable.show_marketcap == 'true' && `<td class="cpt-table-cell market-cap">${marketCap}</td>`}
